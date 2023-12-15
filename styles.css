@@ -1,18 +1,37 @@
-body {
-    margin: 0px;
+.example-9 {
+  width: 100%;
+  min-height: 400px;
+  background: linear-gradient(45deg, #ff8a00, #e52e71), linear-gradient(-45deg, #ffc900, #ff3838), linear-gradient(135deg, #8e2de2, #4a00e0), linear-gradient(-135deg, #08cde9, #006ba1);
+  background-size: 400% 400%;
+  -webkit-animation: background-anim-example-9 1s ease-in-out infinite;
+          animation: background-anim-example-9 1s ease-in-out infinite;
 }
 
-.patterns {
-    width: 100vw;
-    height: 100vw;
+.example-9 p {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
 }
 
-.pt1 {
-    background-size: 50px 50px;
-    background-color: #0ae;
-    background-image: -webkit-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-    background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-    background-image: -ms-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-    background-image: -o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
-    background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+@-webkit-keyframes background-anim-example-9 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes background-anim-example-9 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
